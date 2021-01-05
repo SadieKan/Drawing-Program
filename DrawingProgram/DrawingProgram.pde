@@ -6,6 +6,7 @@ Boolean draw=false;
 void setup() {
   fullScreen(); //landscape
   variablePopulation();
+  rect(canvasX, canvasY, canvasWidth, canvasHeight);
 }
 
 void draw() {

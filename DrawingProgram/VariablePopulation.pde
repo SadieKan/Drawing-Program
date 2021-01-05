@@ -1,10 +1,10 @@
 void variablePopulation() {
   ink = black;
   //Canvas
-  canvasX = ;
-  canvasY = ;
-  canvasWidth = ;
-  canvasHeight = ;
+  canvasX = width*5/13;
+  canvasY = height*2/15;
+  canvasWidth = width*7/13;
+  canvasHeight = height*11/15;
 
   //Exit Button
 
