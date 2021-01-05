@@ -1,12 +1,19 @@
 void variablePopulation() {
   ink = black;
+  backgroundColour = #B9B7BD;
+  darkPewter = #9FA0A1;
+  
   //Canvas
-  canvasX = width*5/13;
+  canvasX = width*4/13;
   canvasY = height*2/15;
-  canvasWidth = width*7/13;
+  canvasWidth = width*8/13;
   canvasHeight = height*11/15;
 
-  //Exit Button
+  //Quit Button
+  quitButtonX = width*48/52;
+  quitButtonY = height*1/15;
+  quitButtonWidth = width*2/52;
+  quitButtonHeight = height*2/15;
 
   //Top Row Buttons
   //Drop Down Menus
