@@ -1,7 +1,8 @@
 void variablePopulation() {
   ink = black;
-  backgroundColour = #B9B7BD;
-  darkPewter = #9FA0A1;
+  backgroundColour = #5885AF;
+  midnightBlue = #35628b;
+  darkBlue = #274472;
   
   //Canvas
   canvasX = width*4/13;

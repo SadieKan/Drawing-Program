@@ -1,5 +1,6 @@
 // Global Variables
-color ink, backgroundColour, black = #000000, white = #FFFFFF, darkPewter;
+color ink, black = #000000, white = #FFFFFF;
+color backgroundColour, midnightBlue, darkBlue;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 Boolean draw=false;
 
@@ -7,7 +8,7 @@ void setup() {
   fullScreen(); //landscape
   variablePopulation();
   background(backgroundColour);
-  stroke(darkPewter);
+  stroke(darkBlue);
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
   stroke(black);
 }
@@ -19,6 +20,9 @@ void draw() {
     line(mouseX, mouseY, pmouseX, pmouseY);
     fill(white);
   }
+  //topRowButtons();
+  //leftButtons();
+  //soundControlButtons();
 }
 
 void mousePressed() {
