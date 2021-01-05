@@ -11,9 +11,9 @@ void variablePopulation() {
 
   //Quit Button
   quitButtonX = width*48/52;
-  quitButtonY = height*1/15;
+  quitButtonY = height*1/30;
   quitButtonWidth = width*2/52;
-  quitButtonHeight = height*2/15;
+  quitButtonHeight = height*2/30;
 
   //Top Row Buttons
   //Drop Down Menus
