@@ -22,12 +22,15 @@ void draw() {
 }
 
 void mousePressed() {
-  if ( mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight ) {
+  if (mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
     println("canvas");
     if (draw == false) {
       draw = true;
     } else {
       draw = false;
     }
+  }
+  if (mouseX>quitButtonX  && mouseX<quitButtonX+quitButtonWidth  && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
+    exit();
   }
 }

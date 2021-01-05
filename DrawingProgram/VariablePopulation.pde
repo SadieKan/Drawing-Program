@@ -10,7 +10,7 @@ void variablePopulation() {
   canvasHeight = height*11/15;
 
   //Quit Button
-  quitButtonX = width*48/52;
+  quitButtonX = width*49/52;
   quitButtonY = height*1/30;
   quitButtonWidth = width*2/52;
   quitButtonHeight = height*2/30;
