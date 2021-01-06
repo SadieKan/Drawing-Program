@@ -32,6 +32,13 @@ void variablePopulation() {
   //Icons/Display Choices
 
   //Left Side Buttons
+  leftRowX = width*1/30;
+  leftRowWidth = width*6/30;
+  leftRowHeight = height*4/30;
+  lineChoicesY = height*5/30;
+  shapesY = height*11/30;
+  brushSizesY = height*17/30;
+  inkColoursY = height*23/30;
   //Enlarged Hover Over
   //Icons/Display Choices
 

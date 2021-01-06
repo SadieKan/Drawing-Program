@@ -3,6 +3,7 @@ color ink, black = #000000, white = #FFFFFF;
 color backgroundColour, salmon, darkBlue, blue;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserX, drawingToolsX, backgroundColourX;
+float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY, inkColoursY;
 Boolean draw=false;
 
 void setup() {
