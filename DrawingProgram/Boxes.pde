@@ -1,7 +1,3 @@
-void canvas() {
-  rect(canvasX, canvasY, canvasWidth, canvasHeight);
-}
-
 void boxes() {
   fill(backgroundColour);
   stroke(backgroundColour);

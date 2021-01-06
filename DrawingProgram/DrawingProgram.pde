@@ -7,7 +7,7 @@ Boolean draw=false;
 void setup() {
   fullScreen(); //landscape
   variablePopulation();
-  canvas();
+  rect(canvasX, canvasY, canvasWidth, canvasHeight);
 }
 
 void draw() {
@@ -20,7 +20,7 @@ void draw() {
   }
   //&& mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight //code doesn't work that well if the mouse is moving quickly(it draws outside of the canvas)
 
-  boxes(); //found in canvas tab //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly
+  boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly
   quitButton();
   //topRowButtons();
   //leftButtons();
