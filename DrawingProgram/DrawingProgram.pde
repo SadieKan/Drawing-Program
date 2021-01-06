@@ -1,25 +1,27 @@
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
-color backgroundColour, midnightBlue, darkBlue;
+color backgroundColour, salmon, darkBlue;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 Boolean draw=false;
 
 void setup() {
   fullScreen(); //landscape
   variablePopulation();
-  background(backgroundColour);
-  stroke(darkBlue);
-  rect(canvasX, canvasY, canvasWidth, canvasHeight);
-  stroke(black);
+  canvas();
 }
 
 void draw() {
-  quitButton();
-  if (draw == true && mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+  if (draw == true) {
     fill(black);
+    strokeWeight(2);
     line(mouseX, mouseY, pmouseX, pmouseY);
+    strokeWeight(1);
     fill(white);
   }
+  //&& mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight //code doesn't work that well if the mouse is moving quickly(it draws outside of the canvas)
+
+  boxes(); //found in canvas tab //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly
+  quitButton();
   //topRowButtons();
   //leftButtons();
   //soundControlButtons();

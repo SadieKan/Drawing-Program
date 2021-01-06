@@ -6,8 +6,8 @@ void quitButton() {
     fill (white);
     stroke (black);
   } else {
-    stroke (midnightBlue);
-    fill (midnightBlue);
+    stroke (salmon);
+    fill (salmon);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
     fill (white);
     stroke (black);
