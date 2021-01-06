@@ -1,7 +1,8 @@
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
-color backgroundColour, salmon, darkBlue;
+color backgroundColour, salmon, darkBlue, blue;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserX, drawingToolsX, backgroundColourX;
 Boolean draw=false;
 
 void setup() {
@@ -15,15 +16,21 @@ void draw() {
     fill(black);
     strokeWeight(2);
     line(mouseX, mouseY, pmouseX, pmouseY);
-    strokeWeight(1);
-    fill(white);
+    reset();
   }
   //&& mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight //code doesn't work that well if the mouse is moving quickly(it draws outside of the canvas)
 
   boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly
   quitButton();
-  //topRowButtons();
-  //leftButtons();
+  restartCanvas();
+  lineArt();
+  eraser();
+  drawingTools();
+  backgroundColour();
+  lineChoices();
+  shapes();
+  brushSizes();
+  inkColours();
   //soundControlButtons();
 }
 
@@ -38,5 +45,8 @@ void mousePressed() {
   }
   if (mouseX>quitButtonX  && mouseX<quitButtonX+quitButtonWidth  && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
     exit();
+  }
+  if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+    rect(canvasX, canvasY, canvasWidth, canvasHeight);
   }
 }

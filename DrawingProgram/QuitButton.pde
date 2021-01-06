@@ -1,15 +1,24 @@
+//Global Variables
+String quit= "X";
+PFont quitButtonFont;
+
 void quitButton() {
-  if (mouseX>quitButtonX  && mouseX<quitButtonX+quitButtonWidth  && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
+  if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth  && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
     stroke (darkBlue);
     fill (darkBlue);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-    fill (white);
-    stroke (black);
+    reset();
+    //Text
+    quitButtonText();
   } else {
-    stroke (salmon);
+    strokeWeight(2);
+    stroke (darkBlue);
     fill (salmon);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-    fill (white);
-    stroke (black);
+    reset();
+    //Text
+    fill(darkBlue);
+    quitButtonText();
+    reset();
   }
 }

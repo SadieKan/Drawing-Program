@@ -5,8 +5,7 @@ void boxes() {
   rect(0, height-canvasY, width, canvasY);
   rect(0, canvasY, canvasX, canvasHeight);
   rect(width*29/30, canvasY, width*1/30, canvasHeight);
-  stroke(black);
-  fill(white);
+  reset();
   //Canvas Outline
   strokeWeight(3);
   stroke(darkBlue);
@@ -14,6 +13,5 @@ void boxes() {
   line(canvasX, canvasY+canvasHeight, canvasX+canvasWidth, canvasY+canvasHeight);
   line(canvasX, canvasY, canvasX, canvasY+canvasHeight);
   line(canvasX+canvasWidth, canvasY, canvasX+canvasWidth, canvasY+canvasHeight);
-  stroke(black);
-  strokeWeight(1);
+  reset();
 }
