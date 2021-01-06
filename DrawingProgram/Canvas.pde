@@ -1,11 +1,5 @@
-//Global Variables
-
 void canvas() {
-  //strokeWeight(5);
-  //stroke(darkBlue);
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
-  //stroke(black);
-  //strokeWeight(1);
 }
 
 void boxes() {
