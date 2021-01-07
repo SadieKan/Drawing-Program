@@ -4,6 +4,8 @@ void variablePopulation() {
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
+  
+  buttonFont = createFont ("ArialRoundedMTBold", 55);
 
   //Canvas
   canvasX = width*4/15;
@@ -12,7 +14,6 @@ void variablePopulation() {
   canvasHeight = height*11/15;
 
   //Quit Button
-  quitButtonFont = createFont ("ArialRoundedMTBold", 55);
   quitButtonX = width*57/60;
   quitButtonY = height*1/45;
   quitButtonWidth = width*1/30;

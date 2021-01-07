@@ -1,13 +1,19 @@
+//Global Variables
+String restart= "Restart Canvas";
+
 void restartCanvas() {
   if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
     rect(restartX, topRowY, topRowWidth, topRowHeight);
     reset();
+    restartButtonText();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(restartX, topRowY, topRowWidth, topRowHeight);
+    reset();
+    fill(darkBlue);
+    restartButtonText();
     reset();
   }
 }
@@ -18,8 +24,7 @@ void lineArt() {
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -29,8 +34,7 @@ void lineArt() {
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -43,8 +47,7 @@ void eraser() {
     rect(eraserX, topRowY, topRowWidth, topRowHeight);
     reset();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(eraserX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -57,12 +60,14 @@ void drawingTools() {
     rect(drawingToolsX, topRowY, topRowWidth, topRowHeight);
     reset();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(drawingToolsX, topRowY, topRowWidth, topRowHeight);
     reset();
   }
+  strokeWeight(2);
+  stroke(darkBlue);
+  toolsDropDown();
 }
 
 void backgroundColour() {
@@ -71,8 +76,7 @@ void backgroundColour() {
     rect(backgroundColourX, topRowY, topRowWidth, topRowHeight);
     reset();
   } else {
-    strokeWeight(2);
-    stroke(darkBlue);
+    border();
     fill(blue);
     rect(backgroundColourX, topRowY, topRowWidth, topRowHeight);
     reset();

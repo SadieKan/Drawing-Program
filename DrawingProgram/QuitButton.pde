@@ -1,6 +1,5 @@
 //Global Variables
 String quit= "X";
-PFont quitButtonFont;
 
 void quitButton() {
   if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth  && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
@@ -11,8 +10,7 @@ void quitButton() {
     //Text
     quitButtonText();
   } else {
-    strokeWeight(2);
-    stroke (darkBlue);
+    border();
     fill (salmon);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
     reset();

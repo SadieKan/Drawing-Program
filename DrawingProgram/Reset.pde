@@ -3,3 +3,8 @@ void reset() {
   stroke(black);
   fill(white);
 }
+
+void border() {
+  strokeWeight(2);
+  stroke(darkBlue);
+}
