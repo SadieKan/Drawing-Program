@@ -2,7 +2,7 @@
 String restart= "Restart Canvas", eraserText= "Eraser", drawingToolsText= "Drawing Tools";
 
 void restartCanvas() {
-  if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>restartX && mouseX<restartX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
     rect(restartX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -19,7 +19,7 @@ void restartCanvas() {
 }
 
 void lineArt() {
-  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -29,7 +29,7 @@ void lineArt() {
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
   }
-  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
