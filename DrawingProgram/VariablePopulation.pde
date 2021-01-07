@@ -5,8 +5,6 @@ void variablePopulation() {
   darkBlue = #24305E;
   blue = #6392bf;
 
-  buttonFont = createFont ("ArialRoundedMTBold", 55);
-
   //Canvas
   canvasX = width*4/15;
   canvasY = height*2/15;
@@ -27,43 +25,43 @@ void variablePopulation() {
   imageY = canvasY;
   imageWidth = canvasX*imageWidthRatio;
   imageHeight = canvasX*imageHeightRatio;
-  pic2 = loadImage ("../Images/pooh.jpg"); //Dimensions: 801 Width, 1024 Height
+  pic2 = loadImage ("../Images/pooh.png"); //Dimensions: 801 Width, 1024 Height
   float imageWidthRatio2 = 801.0/801.0; 
   float imageHeightRatio2 = 1024.0/801.0;
   imageX2 = canvasX+ width*1/5;
-  imageY2 = canvasY;
-  imageWidth2 = canvasX*imageWidthRatio2;
-  imageHeight2 = canvasX*imageHeightRatio2; 
+  imageY2 = canvasY+ height*1/50;
+  imageWidth2 = (canvasHeight*imageWidthRatio2)*15/20;
+  imageHeight2 = (canvasHeight*imageHeightRatio2)*15/20; 
 
-//Top Row Buttons
-topRowY = height*1/30;
-topRowWidth = width*7/60;
-topRowHeight = height*2/30;
-restartX = width*47/60;
-lineArtX = width*38/60;
-lineArt2X = width*29/60;
-eraserX = width*20/60;
-drawingToolsX = width*11/60;
-backgroundColourX = width*2/60;
-//Drop Down Menus
-//Icons/Display Choices
+  //Top Row Buttons
+  topRowY = height*1/30;
+  topRowWidth = width*7/60;
+  topRowHeight = height*2/30;
+  restartX = width*47/60;
+  lineArtX = width*38/60;
+  lineArt2X = width*29/60;
+  eraserX = width*20/60;
+  drawingToolsX = width*11/60;
+  backgroundColourX = width*2/60;
+  //Drop Down Menus
+  //Icons/Display Choices
 
-//Left Side Buttons
-leftRowX = width*1/30;
-leftRowWidth = width*6/30;
-leftRowHeight = height*4/30;
-lineChoicesY = height*5/30;
-shapesY = height*11/30;
-brushSizesY = height*17/30;
-inkColoursY = height*23/30;
-//Enlarged Hover Over
-//Icons/Display Choices
+  //Left Side Buttons
+  leftRowX = width*1/30;
+  leftRowWidth = width*6/30;
+  leftRowHeight = height*4/30;
+  lineChoicesY = height*5/30;
+  shapesY = height*11/30;
+  brushSizesY = height*17/30;
+  inkColoursY = height*23/30;
+  //Enlarged Hover Over
+  //Icons/Display Choices
 
-//Volume Controls
+  //Volume Controls
 
-//Play and Pause Buttons
+  //Play and Pause Buttons
 
-//Song 1-3 Buttons
+  //Song 1-3 Buttons
 
-//Music Restart Buttons
+  //Music Restart Buttons
 }

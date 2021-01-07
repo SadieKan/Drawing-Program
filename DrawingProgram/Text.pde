@@ -1,3 +1,7 @@
+void textSetup() {
+  buttonFont = createFont ("ArialRoundedMTBold", 55);
+}
+
 void quitButtonText() {
   textAlign (CENTER, TOP);
   textFont(buttonFont, 35);

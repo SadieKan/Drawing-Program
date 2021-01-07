@@ -12,6 +12,7 @@ Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false
 void setup() {
   fullScreen(); //landscape
   variablePopulation();
+  textSetup();
   rect(canvasX, canvasY, canvasWidth, canvasHeight);
 }
 
@@ -47,6 +48,7 @@ void draw() {
 }
 
 void mousePressed() {
+  //Drawing On the Canvas
   if (mouseX>canvasX  && mouseX<canvasX+canvasWidth && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
     if (drawOn == true) {
       if (draw == false) {
