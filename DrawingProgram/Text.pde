@@ -9,3 +9,21 @@ void restartButtonText() {
   textFont(buttonFont, 20);
   text(restart, restartX, topRowY, topRowWidth, topRowHeight);
 }
+
+void eraserButtonText() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 35);
+  text(eraserText, eraserX, topRowY, topRowWidth, topRowHeight);
+}
+
+void drawingToolsText() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 25);
+  text(drawingToolsText, drawingToolsX, topRowY, topRowWidth, topRowHeight);
+}
+
+void dropDown2Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 35);
+  text(penText, drawingToolsX, topRowY+topRowHeight, topRowWidth, topRowHeight);
+}

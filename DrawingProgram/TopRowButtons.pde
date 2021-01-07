@@ -1,5 +1,5 @@
 //Global Variables
-String restart= "Restart Canvas";
+String restart= "Restart Canvas", eraserText= "Eraser", drawingToolsText= "Drawing Tools";
 
 void restartCanvas() {
   if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
@@ -46,10 +46,14 @@ void eraser() {
     fill(darkBlue);
     rect(eraserX, topRowY, topRowWidth, topRowHeight);
     reset();
+    eraserButtonText();
   } else {
     border();
     fill(blue);
     rect(eraserX, topRowY, topRowWidth, topRowHeight);
+    reset();
+    fill(darkBlue);
+    eraserButtonText();
     reset();
   }
 }
@@ -59,10 +63,14 @@ void drawingTools() {
     fill(darkBlue);
     rect(drawingToolsX, topRowY, topRowWidth, topRowHeight);
     reset();
+    drawingToolsText();
   } else {
     border();
     fill(blue);
     rect(drawingToolsX, topRowY, topRowWidth, topRowHeight);
+    reset();
+    fill(darkBlue);
+    drawingToolsText();
     reset();
   }
   strokeWeight(2);

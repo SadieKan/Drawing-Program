@@ -24,7 +24,7 @@ void draw() {
   //&& mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight //code doesn't work that well if the mouse is moving quickly(it draws outside of the canvas)
 
   if (eraser == true) {
-    strokeWeight(4);
+    strokeWeight(20);
     stroke(white);
     line(mouseX, mouseY, pmouseX, pmouseY);
     reset();
