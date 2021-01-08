@@ -1,6 +1,6 @@
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
-color backgroundColour, salmon, darkBlue, blue;
+color backgroundColour, canvasColour, salmon, darkBlue, blue;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserX, drawingToolsX, backgroundColourX;
@@ -13,7 +13,7 @@ void setup() {
   fullScreen(); //landscape
   variablePopulation();
   textSetup();
-  rect(canvasX, canvasY, canvasWidth, canvasHeight);
+  canvas();
 }
 
 void draw() {
@@ -26,7 +26,7 @@ void draw() {
 
   if (eraser == true) {
     strokeWeight(20);
-    stroke(white);
+    stroke(canvasColour);
     line(mouseX, mouseY, pmouseX, pmouseY);
     reset();
   }
@@ -49,61 +49,8 @@ void draw() {
 
 void mousePressed() {
   //Drawing On the Canvas
-  if (mouseX>canvasX  && mouseX<canvasX+canvasWidth && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
-    if (drawOn == true) {
-      if (draw == false) {
-        draw = true;
-        println("canvas");
-      } else {
-        draw = false;
-      }
-    }
-    if (eraserOn == true) {
-      if (eraser == false) {
-        eraser = true;
-        println("eraser");
-      } else {
-        eraser = false;
-      }
-    }
-  }
-
+  canvasPressed();
   //Top Row
-  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    lineArt1 = true;
-    lineArt2 = false;
-    rect(canvasX, canvasY, canvasWidth, canvasHeight);
-  }
-  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    lineArt1 = false;
-    lineArt2 = true;
-    rect(canvasX, canvasY, canvasWidth, canvasHeight);
-  }
-  if (mouseX>eraserX && mouseX<eraserX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    eraserOn = true;
-    drawOn = false;
-    draw = false;
-  }
-  if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    dropDown2 = true;
-  } else {
-    dropDown2 = false;
-  }
-  if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY+topRowHeight && mouseY<topRowY+topRowHeight+topRowHeight) {
-    drawOn = true;
-    eraserOn = false;
-    eraser = false;
-  }
-
-  //Main Controls
-  if (mouseX>quitButtonX  && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
-    exit();
-  }
-  if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    rect(canvasX, canvasY, canvasWidth, canvasHeight);
-    drawOn = false;
-    eraserOn = false;
-    lineArt1 = false;
-    lineArt2 = false;
-  }
+  topRowMousePressed();
+  mainControlsPressed();
 }

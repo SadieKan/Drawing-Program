@@ -1,6 +1,7 @@
 //Global Variables
 String restart= "Restart Canvas", eraserText= "Eraser", drawingToolsText= "Drawing Tools";
 
+//Restart Canvas
 void restartCanvas() {
   if (mouseX>restartX && mouseX<restartX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
@@ -16,10 +17,11 @@ void restartCanvas() {
     restartButtonText();
     reset();
   }
-}
+} //End of Restart Canvas
 
-void lineArt() {
-  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+//Line Art
+void lineArt() { 
+  if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { //Line Art 1 = totoro
     fill(darkBlue);
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -29,7 +31,7 @@ void lineArt() {
     rect(lineArtX, topRowY, topRowWidth, topRowHeight);
     reset();
   }
-  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>lineArt2X && mouseX<lineArt2X+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) { //Line Art 2 = pooh
     fill(darkBlue);
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -39,8 +41,9 @@ void lineArt() {
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
   }
-}
+} //End of Line Art
 
+//Eraser
 void eraser() {
   if (mouseX>eraserX && mouseX<eraserX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
@@ -56,8 +59,9 @@ void eraser() {
     eraserButtonText();
     reset();
   }
-}
+} //End of Eraser
 
+//Drawing Tools (Pen, Spray Paint, and hopefully Paint Bucket (flood fill)
 void drawingTools() {
   if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
@@ -76,8 +80,9 @@ void drawingTools() {
   strokeWeight(2);
   stroke(darkBlue);
   toolsDropDown();
-}
+} //End of Drawing Tools
 
+//Background Colour // Changes the colour of the canvas
 void backgroundColour() {
   if (mouseX>backgroundColourX && mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
@@ -89,4 +94,4 @@ void backgroundColour() {
     rect(backgroundColourX, topRowY, topRowWidth, topRowHeight);
     reset();
   }
-}
+} //End of Background Colour

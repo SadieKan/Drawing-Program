@@ -1,14 +1,15 @@
 void variablePopulation() {
   ink = black;
   backgroundColour = #A8D0E6;
+  canvasColour = white;
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
 
   //Canvas
-  canvasX = width*4/15;
+  canvasX = width*9/30;
   canvasY = height*2/15;
-  canvasWidth = width*21/30;
+  canvasWidth = width*20/30;
   canvasHeight = height*11/15;
 
   //Quit Button
@@ -23,8 +24,8 @@ void variablePopulation() {
   float imageHeightRatio = 962.0/660.0;
   imageX = canvasX+ width*1/5;
   imageY = canvasY;
-  imageWidth = canvasX*imageWidthRatio;
-  imageHeight = canvasX*imageHeightRatio;
+  imageWidth = (canvasHeight*imageWidthRatio)*14/20;
+  imageHeight = (canvasHeight*imageHeightRatio)*14/20;
   pic2 = loadImage ("../Images/pooh.png"); //Dimensions: 801 Width, 1024 Height
   float imageWidthRatio2 = 801.0/801.0; 
   float imageHeightRatio2 = 1024.0/801.0;

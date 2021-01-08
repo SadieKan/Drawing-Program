@@ -1,3 +1,30 @@
+void canvas() {
+  fill(canvasColour);
+  rect(canvasX, canvasY, canvasWidth, canvasHeight);
+  reset();
+}
+
+void canvasPressed() {
+  if (mouseX>canvasX  && mouseX<canvasX+canvasWidth && mouseY>canvasY && mouseY<canvasY+canvasHeight) {
+    if (drawOn == true) {
+      if (draw == false) {
+        draw = true;
+        println("canvas");
+      } else {
+        draw = false;
+      }
+    }
+    if (eraserOn == true) {
+      if (eraser == false) {
+        eraser = true;
+        println("eraser");
+      } else {
+        eraser = false;
+      }
+    }
+  }
+}
+
 void boxes() {
   fill(backgroundColour);
   stroke(backgroundColour);
