@@ -2,8 +2,18 @@
 String penText= "Pen";
 
 void toolsDropDown() {
-  if (dropDown2 == true) { //normal pen option
+  if (dropDown2 == true && mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY+topRowHeight && mouseY<(topRowY+topRowHeight)+topRowHeight) { //normal pen option
+    fill(lightGrey);
+    border();
     rect(drawingToolsX, topRowY+topRowHeight, topRowWidth, topRowHeight); 
+    reset();
+    fill(darkBlue);
+    dropDown2Text();
+    reset();
+  } else if (dropDown2 == true) {
+    border();
+    rect(drawingToolsX, topRowY+topRowHeight, topRowWidth, topRowHeight); 
+    reset();
     fill(darkBlue);
     dropDown2Text();
     reset();

@@ -1,6 +1,6 @@
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
-color backgroundColour, canvasColour, salmon, darkBlue, blue;
+color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGrey;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;

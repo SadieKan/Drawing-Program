@@ -5,6 +5,7 @@ void variablePopulation() {
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
+  lightGrey = #a5a5a5;
   
   //Tool Sizes
   penThickness = 2;
@@ -43,8 +44,8 @@ void variablePopulation() {
   topRowWidth = width*7/60;
   topRowHeight = height*2/30;
   restartX = width*47/60;
-  lineArtX = width*38/60;
-  lineArt2X = width*29/60;
+  lineArt2X = width*38/60;
+  lineArtX = width*29/60;
   eraserButtonX = width*20/60;
   drawingToolsX = width*11/60;
   backgroundColourX = width*2/60;
