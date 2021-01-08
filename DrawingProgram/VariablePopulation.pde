@@ -5,7 +5,7 @@ void variablePopulation() {
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
-  lightGrey = #a5a5a5;
+  lightGray = #a5a5a5;
   
   //Tool Sizes
   penThickness = 2;
@@ -54,10 +54,9 @@ void variablePopulation() {
   canvasColourDropdownY = topRowY+topRowHeight;
   canvasColourDropdownWidth = width*13/60;
   canvasColourDropdownHeight = height*6/30;
-  canvasColourDropdownX2 = canvasColourDropdownX+canvasColourDropdownWidth*1/5;
-  canvasColourDropdownX3 = canvasColourDropdownX+canvasColourDropdownWidth*2/5;
-  canvasColourDropdownX4 = canvasColourDropdownX+canvasColourDropdownWidth*3/5;
-  canvasColourDropdownX5 = canvasColourDropdownX+canvasColourDropdownWidth*4/5;
+  canvasColourDropdownX2 = canvasColourDropdownX+canvasColourDropdownWidth*1/4;
+  canvasColourDropdownX3 = canvasColourDropdownX+canvasColourDropdownWidth*2/4;
+  canvasColourDropdownX4 = canvasColourDropdownX+canvasColourDropdownWidth*3/4;
   canvasColourDropdownY2 = canvasColourDropdownY+canvasColourDropdownHeight*1/3;
   canvasColourDropdownY3 = canvasColourDropdownY+canvasColourDropdownHeight*2/3;
   //Icons/Display Choices

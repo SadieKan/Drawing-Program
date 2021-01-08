@@ -1,9 +1,10 @@
 //Only the black and white background colours work right now
 //For now: if the canvas background colour is white, the ink is black + if it is black, he ink will be white //Hopefully change it so that if the ink and background colour are the same, the ink will change to either black or white 
+//To do: fix the CanvasColour select tool, if (dropdown1 == true) then change the colour
 
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
-color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGrey;
+color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGray;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, canvasColourDropdownX, canvasColourDropdownY, canvasColourDropdownWidth, canvasColourDropdownHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
@@ -12,7 +13,8 @@ float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY,
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
-Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, canvasBlack=false, canvasWhite=false;
+Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false; 
+Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
 
 void setup() {
   fullScreen(); //landscape

@@ -1,5 +1,5 @@
 //Top Row Buttons
-void topRowMousePressed() {  
+void topRowMousePressed() {
   if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     lineArt1 = true;
     lineArt2 = false;
@@ -20,12 +20,12 @@ void topRowMousePressed() {
   } else {
     dropdown2 = false;
   }
-  if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY+topRowHeight && mouseY<topRowY+topRowHeight+topRowHeight) {
+  if (mouseX<drawingToolsX+topRowWidth && mouseY>topRowY+topRowHeight && mouseY<topRowY+topRowHeight+topRowHeight) {
     drawOn = true;
     eraserOn = false;
     eraser = false;
   }
-  if (mouseX>backgroundColourX && mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     dropdown1 = true;
   } else {
     dropdown1 = false;
@@ -33,19 +33,79 @@ void topRowMousePressed() {
 }
 //Canvas Colour Selection
 void canvasColourPressed() {
-  if (mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+topRowWidth  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+topRowHeight) {
+  if (mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasWhite = true;
     ink = black;
     println("Canvas is now white");
   } else {
     canvasWhite = false;
   }
-  if (mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/5  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
+  if (mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasBlack = true;
     ink = white;
-    println("Canvas is now black");
+    println("Canvas is now black"); //this was used for troubleshooting
   } else {
     canvasBlack = false;
+  }
+  if (mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
+    canvasGray = true;
+    println("Canvas is now gray");
+  } else {
+    canvasGray = false;
+  }
+  if (mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
+    canvasRed = true;
+    println("Canvas is now red");
+  } else {
+    canvasRed = false;
+  }
+  if (mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
+    canvasBlue = true;
+    println("Canvas is now blue");
+  } else {
+    canvasBlue = false;
+  }
+  if (mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
+    canvasPurple = true;
+    println("Canvas is now purple");
+  } else {
+    canvasPurple = false;
+  }
+  if (mouseX>canvasColourDropdownX3 && mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
+    canvasPink = true;
+    println("Canvas is now pink");
+  } else {
+    canvasPink = false;
+  }
+  if (mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
+    canvasOrange = true;
+    println("Canvas is now orange");
+  } else {
+    canvasOrange = false;
+  }
+  if (mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
+    canvasGreen = true;
+    println("Canvas is now green");
+  } else {
+    canvasGreen = false;
+  }
+  if (mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
+    canvasTeal = true;
+    println("Canvas is now teal");
+  } else {
+    canvasTeal = false;
+  }
+  if (mouseX>canvasColourDropdownX3 && mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
+    canvasLime = true;
+    println("Canvas is now lime");
+  } else {
+    canvasLime = false;
+  }    
+  if (mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
+    canvasYellow = true;
+    println("Canvas is now yellow");
+  } else {
+    canvasYellow = false;
   }
 }
 
