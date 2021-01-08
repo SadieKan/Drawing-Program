@@ -1,5 +1,5 @@
 void variablePopulation() {
-  ink = white;
+  ink = black;
   backgroundColour = #A8D0E6;
   canvasColour = white;
   salmon = #F76C6C;
