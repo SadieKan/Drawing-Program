@@ -100,9 +100,6 @@ void drawingTools() {
     drawingToolsText();
     reset();
   }
-  border();
-  toolsDropDown();
-  reset();
 } //End of Drawing Tools
 
 

@@ -1,3 +1,4 @@
+//Top Row Buttons
 void topRowMousePressed() {  
   if (mouseX>lineArtX && mouseX<lineArtX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     lineArt1 = true;
@@ -15,17 +16,29 @@ void topRowMousePressed() {
     draw = false;
   }
   if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
-    dropDown2 = true;
+    dropdown2 = true;
   } else {
-    dropDown2 = false;
+    dropdown2 = false;
   }
   if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY+topRowHeight && mouseY<topRowY+topRowHeight+topRowHeight) {
     drawOn = true;
     eraserOn = false;
     eraser = false;
   }
+  if (mouseX>backgroundColourX && mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+    dropdown1 = true;
+  } else {
+    dropdown1 = false;
+  }
 }
+//Canvas Colour Selection
+/*
+if (mouseX>backgroundColourX && mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+}
+*/
 
+
+//Quit and Restart Buttons
 void mainControlsPressed() {
   if (mouseX>quitButtonX  && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
     exit();

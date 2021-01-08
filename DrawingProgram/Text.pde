@@ -38,7 +38,7 @@ void drawingToolsText() {
   textFont(buttonFont, 20);
   text(drawingToolsText, drawingToolsX, topRowY, topRowWidth, topRowHeight);
 }
-void dropDown2Text() {
+void dropdown2Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
   text(penText, drawingToolsX, topRowY+topRowHeight, topRowWidth, topRowHeight);

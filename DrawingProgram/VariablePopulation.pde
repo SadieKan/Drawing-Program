@@ -50,6 +50,16 @@ void variablePopulation() {
   drawingToolsX = width*11/60;
   backgroundColourX = width*2/60;
   //Drop Down Menus
+  canvasColourDropdownX = backgroundColourX;
+  canvasColourDropdownY = topRowY+topRowHeight;
+  canvasColourDropdownWidth = width*13/60;
+  canvasColourDropdownHeight = height*6/30;
+  canvasColourDropdownX2 = canvasColourDropdownX+canvasColourDropdownWidth*1/5;
+  canvasColourDropdownX3 = canvasColourDropdownX+canvasColourDropdownWidth*2/5;
+  canvasColourDropdownX4 = canvasColourDropdownX+canvasColourDropdownWidth*3/5;
+  canvasColourDropdownX5 = canvasColourDropdownX+canvasColourDropdownWidth*4/5;
+  canvasColourDropdownY2 = canvasColourDropdownY+canvasColourDropdownHeight*1/3;
+  canvasColourDropdownY3 = canvasColourDropdownY+canvasColourDropdownHeight*2/3;
   //Icons/Display Choices
 
   //Left Side Buttons
