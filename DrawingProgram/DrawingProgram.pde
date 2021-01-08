@@ -3,8 +3,9 @@ color ink, black = #000000, white = #FFFFFF;
 color backgroundColour, canvasColour, salmon, darkBlue, blue;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserX, drawingToolsX, backgroundColourX;
+float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY, inkColoursY;
+float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
 Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropDown2=false;
@@ -17,34 +18,25 @@ void setup() {
 }
 
 void draw() {
-  if (draw == true) {
-    strokeWeight(2);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    reset();
-  }
-  //&& mouseX>canvasX  && mouseX<canvasX+canvasWidth  && mouseY>canvasY && mouseY<canvasY+canvasHeight //code doesn't work that well if the mouse is moving quickly(it draws outside of the canvas)
-
-  if (eraser == true) {
-    strokeWeight(20);
-    stroke(canvasColour);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    reset();
-  }
-
-  boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly
+  pen();
+  eraser();
+  boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly //canvas tab
+  
+  //Top Row Buttons
   quitButton();
   restartCanvas();
   lineArt();
-  eraser();
+  eraserButton();
   drawingTools();
   backgroundColour();
+  
+  //Left Row Buttons
   lineChoices();
   shapes();
   brushSizes();
   inkColours();
-  if (lineArt1 == true && lineArt2 == false) image(pic, imageX, imageY, imageWidth, imageHeight);
-  if (lineArt1 == false && lineArt2 == true) image(pic2, imageX2, imageY2, imageWidth2, imageHeight2);
-  //soundControlButtons();
+  
+  //Sound Control Buttons
 }
 
 void mousePressed() {

@@ -1,3 +1,14 @@
+void reset() {
+  strokeWeight(1);
+  stroke(black);
+  fill(white);
+}
+
+void border() {
+  strokeWeight(2);
+  stroke(darkBlue);
+}
+
 void canvas() {
   fill(canvasColour);
   rect(canvasX, canvasY, canvasWidth, canvasHeight);

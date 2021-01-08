@@ -17,7 +17,7 @@ void restartButtonText() {
 void eraserButtonText() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 35);
-  text(eraserText, eraserX, topRowY, topRowWidth, topRowHeight);
+  text(eraserText, eraserButtonX, topRowY, topRowWidth, topRowHeight);
 }
 
 void drawingToolsText() {

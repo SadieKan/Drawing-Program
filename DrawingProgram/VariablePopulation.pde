@@ -5,6 +5,10 @@ void variablePopulation() {
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
+  
+  //Tool Sizes
+  penThickness = 2;
+  eraserThickness = 20;
 
   //Canvas
   canvasX = width*9/30;
@@ -41,7 +45,7 @@ void variablePopulation() {
   restartX = width*47/60;
   lineArtX = width*38/60;
   lineArt2X = width*29/60;
-  eraserX = width*20/60;
+  eraserButtonX = width*20/60;
   drawingToolsX = width*11/60;
   backgroundColourX = width*2/60;
   //Drop Down Menus

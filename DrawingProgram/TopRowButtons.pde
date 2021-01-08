@@ -9,7 +9,7 @@ void restartCanvas() {
     reset();
     restartButtonText();
   } else {
-    border();
+    border(); //found in canvas tab //the border that is used alot throughout the whole project
     fill(blue);
     rect(restartX, topRowY, topRowWidth, topRowHeight);
     reset();
@@ -41,25 +41,36 @@ void lineArt() {
     rect(lineArt2X, topRowY, topRowWidth, topRowHeight);
     reset();
   }
+  if (lineArt1 == true && lineArt2 == false) image(pic, imageX, imageY, imageWidth, imageHeight);
+  if (lineArt1 == false && lineArt2 == true) image(pic2, imageX2, imageY2, imageWidth2, imageHeight2);
 } //End of Line Art
 
 //Eraser
-void eraser() {
-  if (mouseX>eraserX && mouseX<eraserX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+void eraserButton() { 
+  if (mouseX>eraserButtonX && mouseX<eraserButtonX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     fill(darkBlue);
-    rect(eraserX, topRowY, topRowWidth, topRowHeight);
+    rect(eraserButtonX, topRowY, topRowWidth, topRowHeight);
     reset();
     eraserButtonText();
+    reset();
   } else {
     border();
     fill(blue);
-    rect(eraserX, topRowY, topRowWidth, topRowHeight);
+    rect(eraserButtonX, topRowY, topRowWidth, topRowHeight);
     reset();
     fill(darkBlue);
     eraserButtonText();
     reset();
   }
 } //End of Eraser
+void eraser() {
+  if (eraser == true) {
+    strokeWeight(eraserThickness);
+    stroke(canvasColour);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    reset();
+  }
+}
 
 //Drawing Tools (Pen, Spray Paint, and hopefully Paint Bucket (flood fill)
 void drawingTools() {
@@ -77,9 +88,9 @@ void drawingTools() {
     drawingToolsText();
     reset();
   }
-  strokeWeight(2);
-  stroke(darkBlue);
+  border();
   toolsDropDown();
+  reset();
 } //End of Drawing Tools
 
 //Background Colour // Changes the colour of the canvas

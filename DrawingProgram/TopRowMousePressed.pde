@@ -9,7 +9,7 @@ void topRowMousePressed() {
     lineArt2 = true;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
   }
-  if (mouseX>eraserX && mouseX<eraserX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+  if (mouseX>eraserButtonX && mouseX<eraserButtonX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     eraserOn = true;
     drawOn = false;
     draw = false;
