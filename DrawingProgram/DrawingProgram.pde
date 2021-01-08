@@ -1,6 +1,4 @@
-/*
-- work on canvasColourPressed() in TopRowMousePressed
-*/
+//Only the black and white background colours work right now
 
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
