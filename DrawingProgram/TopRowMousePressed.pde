@@ -32,10 +32,23 @@ void topRowMousePressed() {
   }
 }
 //Canvas Colour Selection
-/*
-if (mouseX>backgroundColourX && mouseX<backgroundColourX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+void canvasColourPressed() {
+  if (mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+topRowWidth  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+topRowHeight) {
+    canvasWhite = true;
+    ink = black;
+    println("Canvas is now white");
+  } else {
+    canvasWhite = false;
+  }
+  if (mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/5  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
+    canvasBlack = true;
+    ink = white;
+    println("Canvas is now black");
+  } else {
+    canvasBlack = false;
+  }
 }
-*/
+
 
 
 //Quit and Restart Buttons

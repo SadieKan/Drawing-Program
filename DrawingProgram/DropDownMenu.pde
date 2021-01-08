@@ -21,6 +21,7 @@ void toolsDropdown() {
 }
 void pen() {
   if (draw == true) {
+    stroke(ink);
     strokeWeight(penThickness);
     line(mouseX, mouseY, pmouseX, pmouseY);
     reset();
@@ -81,5 +82,17 @@ void canvasColourDropdown() { //will not have hoverover cause it would take too 
     reset();
   }
 }
+
 void canvasColour() {
+  if (canvasWhite == true) {
+    fill(canvasColour);
+    rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    reset();
+  }
+  if (canvasBlack == true) {
+    canvasColour = black;
+    fill(canvasColour);
+    rect(canvasX, canvasY, canvasWidth, canvasHeight);
+    reset();
+  }
 }

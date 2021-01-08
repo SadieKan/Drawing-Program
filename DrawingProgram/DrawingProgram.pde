@@ -1,3 +1,7 @@
+/*
+- work on canvasColourPressed() in TopRowMousePressed
+*/
+
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
 color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGrey;
@@ -9,7 +13,7 @@ float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY,
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
-Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false;
+Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, canvasBlack=false, canvasWhite=false;
 
 void setup() {
   fullScreen(); //landscape
@@ -50,5 +54,6 @@ void mousePressed() {
   canvasPressed();
   //Top Row
   topRowMousePressed();
+  canvasColourPressed();
   mainControlsPressed();
 }
