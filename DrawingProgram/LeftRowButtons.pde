@@ -74,6 +74,7 @@ void triangles() {
 void brushSizes() {
   border();
   rect(leftRowX, brushSizesY, leftRowWidth, leftRowHeight);
+  rect(leftRowX, brushSizesY, leftRowWidth/4, leftRowHeight);
   reset();
 }
 
