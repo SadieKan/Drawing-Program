@@ -77,74 +77,99 @@ void canvasColourDropdown() { //will not have hoverover cause it would take too 
 
 void canvasColour() {
   if (canvasWhite == true) {
+    canvasColour = white;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasWhite = false;
+    dropdown1 = false;
   }
   if (canvasBlack == true) {
     canvasColour = black;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasBlack = false;
+    dropdown1 = false;
   }
   if (canvasGray == true) {
     canvasColour = #838383;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasGray = false;
+    dropdown1 = false;
   }
   if (canvasRed == true) {
     canvasColour = #c44645;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasRed = false;
+    dropdown1 = false;
   }
   if (canvasBlue == true) {
     canvasColour = #6986d5;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasBlue = false;
+    dropdown1 = false;
   }
   if (canvasPurple == true) {
     canvasColour = #ba8fd0;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasPurple = false;
+    dropdown1 = false;
   }
   if (canvasPink == true) {
     canvasColour = #dc99ad;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasPink = false;
+    dropdown1 = false;
   }
   if (canvasOrange == true) {
     canvasColour = #e79775;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasOrange = false;
+    dropdown1 = false;
   }
   if (canvasGreen == true) {
     canvasColour = #418b52;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasGreen = false;
+    dropdown1 = false;
   }
   if (canvasTeal == true) {
     canvasColour = #8bd4c0;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasTeal = false;
+    dropdown1 = false;
   }
   if (canvasLime == true) {
     canvasColour = #b4f5a1;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasLime = false;
+    dropdown1 = false;
   }
   if (canvasYellow == true) {
     canvasColour = #fff99f;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
+    canvasYellow = false;
+    dropdown1 = false;
   }
 }

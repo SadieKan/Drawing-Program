@@ -2,6 +2,10 @@ void lineChoices() {
   border();
   rect(leftRowX, lineChoicesY, leftRowWidth, leftRowHeight);
   reset();
+  rect(leftRowX, lineChoicesY, leftRowWidth, leftRowHeight/4);
+  rect(leftRowX, lineChoicesY+leftRowHeight*1/4, leftRowWidth, leftRowHeight/4);
+  rect(leftRowX, lineChoicesY+leftRowHeight*2/4, leftRowWidth, leftRowHeight/4);
+  rect(leftRowX, lineChoicesY+leftRowHeight*3/4, leftRowWidth, leftRowHeight/4);
 }
 
 void shapes() {
