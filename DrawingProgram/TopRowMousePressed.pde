@@ -14,6 +14,12 @@ void topRowMousePressed() {
     eraserOn = true;
     drawOn = false;
     draw = false;
+    circleOn = false;
+    circle = false;
+    squareOn = false;
+    square = false;
+    triangleOn = false;
+    triangle = false;
   }
   if (mouseX>drawingToolsX && mouseX<drawingToolsX+topRowWidth && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     dropdown2 = true;
@@ -24,6 +30,12 @@ void topRowMousePressed() {
     drawOn = true;
     eraserOn = false;
     eraser = false;
+    circleOn = false;
+    circle = false;
+    squareOn = false;
+    square = false;
+    triangleOn = false;
+    triangle = false;
   }
 }
 //Canvas Colour Selection
@@ -83,8 +95,16 @@ void mainControlsPressed() {
   if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     drawOn = false;
+    draw = false;
     eraserOn = false;
+    eraser = false;
     lineArt1 = false;
     lineArt2 = false;
+    circleOn = false;
+    circle = false;
+    squareOn = false;
+    square = false;
+    triangleOn = false;
+    triangle = false;
   }
 }

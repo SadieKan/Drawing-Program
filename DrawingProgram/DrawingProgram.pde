@@ -12,7 +12,7 @@ float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY,
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
-Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false; 
+Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
 Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
 
 void setup() {
@@ -25,6 +25,9 @@ void setup() {
 void draw() {
   pen();
   eraser();
+  circles();
+  squares();
+  triangles();
   canvasColour();
   boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly //canvas tab
 
@@ -56,4 +59,8 @@ void mousePressed() {
   topRowMousePressed();
   canvasColourPressed();
   mainControlsPressed();
+  //Left Row
+  circlePressed();
+  squarePressed();
+  trianglePressed();
 }

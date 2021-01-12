@@ -33,6 +33,30 @@ void canvasPressed() {
         eraser = false;
       }
     }
+    if (circleOn == true) {
+      if (circle == false) {
+        circle = true;
+        println("circles selected");
+      } else {
+        circle = false;
+      }
+    }
+    if (squareOn == true) {
+      if (square == false) {
+        square = true;
+        println("squares selected");
+      } else {
+        square = false;
+      }
+    }
+    if (triangleOn == true) {
+      if (triangle == false) {
+        triangle = true;
+        println("triangles selected");
+      } else {
+        triangle = false;
+      }
+    }
   }
 }
 

@@ -49,3 +49,9 @@ void canvasColourText() {
   textFont(buttonFont, 20);
   text(canvasColourText, backgroundColourX, topRowY, topRowWidth, topRowHeight);
 }
+
+void shapesButtonText() {
+  textAlign (LEFT, CENTER);
+  textFont(buttonFont, 20);
+  text(shapes, leftRowX+leftRowWidth/15, shapesY, leftRowWidth, leftRowHeight*2/5);
+}
