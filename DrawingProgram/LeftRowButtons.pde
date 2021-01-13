@@ -1,7 +1,7 @@
 //Global Variables
 String shapes = "Shapes:", eraserSizes = "Eraser Sizes:", brushSizes = "Brush Sizes:";
 
-//Eraser Sizes
+//Eraser Sizes //Is no longer a dropdown menu because the canvas can't be placed in void draw
 void eraserSizes() {
   border();
   rect(leftRowX, eraserSizesY, leftRowWidth, leftRowHeight);
@@ -148,6 +148,66 @@ void brushSizes() {
   rect(leftRowX, brushSizesY, leftRowWidth, leftRowHeight*2/5);
   reset();
   brushSizesText();
+  if (mouseX>leftRowX && mouseX<leftRowX+leftRowChoicesWidth && mouseY>brushSizesY+leftRowHeight*2/5 && mouseY<brushSizesY+leftRowHeight*2/5+leftRowChoicesHeight) {
+    border();
+    fill(lightGray);
+    rect(leftRowX, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*1/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*1/15, leftRowChoicesWidth*1/15);
+  } else {
+    border();
+    rect(leftRowX, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*1/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*1/15, leftRowChoicesWidth*1/15);
+  }
+  if (mouseX>leftRowX+leftRowWidth*1/5 && mouseX<leftRowX+leftRowWidth*1/5+leftRowChoicesWidth && mouseY>brushSizesY+leftRowHeight*2/5 && mouseY<brushSizesY+leftRowHeight*2/5+leftRowChoicesHeight) {
+    border();
+    fill(lightGray);
+    rect(leftRowX+leftRowWidth*1/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*3/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*4/15, leftRowChoicesWidth*4/15);
+  } else {
+    border();
+    rect(leftRowX+leftRowWidth*1/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*3/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*4/15, leftRowChoicesWidth*4/15);
+  }
+  if (mouseX>leftRowX+leftRowWidth*2/5 && mouseX<leftRowX+leftRowWidth*2/5+leftRowChoicesWidth && mouseY>brushSizesY+leftRowHeight*2/5 && mouseY<brushSizesY+leftRowHeight*2/5+leftRowChoicesHeight) {
+    border();
+    fill(lightGray);
+    rect(leftRowX+leftRowWidth*2/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*5/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*7/15, leftRowChoicesWidth*7/15);
+  } else {
+    border();
+    rect(leftRowX+leftRowWidth*2/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*5/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*7/15, leftRowChoicesWidth*7/15);
+  }
+  if (mouseX>leftRowX+leftRowWidth*3/5 && mouseX<leftRowX+leftRowWidth*3/5+leftRowChoicesWidth && mouseY>brushSizesY+leftRowHeight*2/5 && mouseY<brushSizesY+leftRowHeight*2/5+leftRowChoicesHeight) {
+    border();
+    fill(lightGray);
+    rect(leftRowX+leftRowWidth*3/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*7/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*10/15, leftRowChoicesWidth*10/15);
+  } else {
+    border();
+    rect(leftRowX+leftRowWidth*3/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*7/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*10/15, leftRowChoicesWidth*10/15);
+  }
+  if (mouseX>leftRowX+leftRowWidth*4/5 && mouseX<leftRowX+leftRowWidth*4/5+leftRowChoicesWidth && mouseY>brushSizesY+leftRowHeight*2/5 && mouseY<brushSizesY+leftRowHeight*2/5+leftRowChoicesHeight) {
+    border();
+    fill(lightGray);
+    rect(leftRowX+leftRowWidth*4/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*9/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*13/15, leftRowChoicesWidth*13/15);
+  } else {
+    border();
+    rect(leftRowX+leftRowWidth*4/5, brushSizesY+leftRowHeight*2/5, leftRowChoicesWidth, leftRowChoicesHeight);
+    reset();
+    ellipse(leftRowX+leftRowWidth*9/10, brushSizesY+leftRowHeight*7/10, leftRowChoicesWidth*13/15, leftRowChoicesWidth*13/15);
+  }
 }//End of Brush Sizes
 
 

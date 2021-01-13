@@ -58,10 +58,11 @@ void mousePressed() {
   //Top Row
   topRowMousePressed();
   canvasColourPressed();
-  mainControlsPressed();
+  mainControlsPressed(); //Quit and restart button
   //Left Row
   eraserSizesPressed();
   circlePressed();
   squarePressed();
   trianglePressed();
+  brushSizesPressed();
 }
