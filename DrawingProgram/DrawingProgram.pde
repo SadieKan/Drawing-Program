@@ -1,5 +1,5 @@
-//Only the black and white background colours work right now
 //For now: if the canvas background colour is white, the ink is black + if it is black, he ink will be white //Hopefully change it so that if the ink and background colour are the same, the ink will change to either black or white 
+
 
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;

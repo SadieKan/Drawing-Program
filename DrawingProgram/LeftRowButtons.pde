@@ -1,5 +1,5 @@
 //Global Variables
-String shapes = "Shapes:", eraserSizes = "Eraser Sizes:", brushSizes = "Brush Sizes:";
+String shapes = "Shapes:", eraserSizes = "Eraser Sizes:", brushSizes = "Brush Sizes:", inkColour = "Ink Colour:";
 
 //Eraser Sizes //Is no longer a dropdown menu because the canvas can't be placed in void draw
 void eraserSizes() {
@@ -215,5 +215,7 @@ void brushSizes() {
 void inkColours() {
   border();
   rect(leftRowX, inkColoursY, leftRowWidth, leftRowHeight);
+  fill(darkBlue);
+  rect(leftRowX, inkColoursY, leftRowWidth, leftRowHeight*2/5);
   reset();
 }//End of Ink Colours
