@@ -50,8 +50,20 @@ void canvasColourText() {
   text(canvasColourText, backgroundColourX, topRowY, topRowWidth, topRowHeight);
 }
 
+void eraserSizesText() {
+  textAlign (LEFT, CENTER);
+  textFont(buttonFont, 20);
+  text(eraserSizes, leftRowX+leftRowWidth/15, eraserSizesY, leftRowWidth, leftRowHeight*2/5);
+}
+
 void shapesButtonText() {
   textAlign (LEFT, CENTER);
   textFont(buttonFont, 20);
   text(shapes, leftRowX+leftRowWidth/15, shapesY, leftRowWidth, leftRowHeight*2/5);
+}
+
+void brushSizesText() {
+  textAlign (LEFT, CENTER);
+  textFont(buttonFont, 20);
+  text(brushSizes, leftRowX+leftRowWidth/15, brushSizesY, leftRowWidth, leftRowHeight*2/5);
 }

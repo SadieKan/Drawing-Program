@@ -106,5 +106,7 @@ void mainControlsPressed() {
     square = false;
     triangleOn = false;
     triangle = false;
+    penThickness = 2;
+    eraserThickness = 20;
   }
 }

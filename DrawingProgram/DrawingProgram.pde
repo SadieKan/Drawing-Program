@@ -8,7 +8,7 @@ PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, canvasColourDropdownX, canvasColourDropdownY, canvasColourDropdownWidth, canvasColourDropdownHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
-float leftRowX, leftRowWidth, leftRowHeight, lineChoicesY, shapesY, brushSizesY, inkColoursY;
+float leftRowX, leftRowWidth, leftRowHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, leftRowChoicesWidth, leftRowChoicesHeight;
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
@@ -40,7 +40,7 @@ void draw() {
   backgroundColour();
 
   //Left Row Buttons
-  lineChoices();
+  eraserSizes();
   shapes();
   brushSizes();
   inkColours();
@@ -60,6 +60,7 @@ void mousePressed() {
   canvasColourPressed();
   mainControlsPressed();
   //Left Row
+  eraserSizesPressed();
   circlePressed();
   squarePressed();
   trianglePressed();

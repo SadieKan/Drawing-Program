@@ -9,7 +9,7 @@ void variablePopulation() {
   
   //Tool Sizes
   penThickness = 2;
-  eraserThickness = 20;
+  eraserThickness = 25;
 
   //Canvas
   canvasX = width*9/30;
@@ -65,7 +65,9 @@ void variablePopulation() {
   leftRowX = width*1/30;
   leftRowWidth = width*6/30;
   leftRowHeight = height*4/30;
-  lineChoicesY = height*5/30;
+  eraserSizesY = height*5/30;
+  leftRowChoicesWidth = leftRowWidth/5;
+  leftRowChoicesHeight = leftRowHeight-leftRowHeight*2/5;
   shapesY = height*11/30;
   brushSizesY = height*17/30;
   inkColoursY = height*23/30;
