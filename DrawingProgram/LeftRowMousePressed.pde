@@ -75,3 +75,55 @@ void trianglePressed() {
     triangleOn = true;
   }
 }
+
+void inkColourPressed() { 
+  //white 
+  if (mouseX>leftRowX && mouseX<leftRowX+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = white;
+  }
+  //black
+  if (mouseX>leftRowX+colourChoicesWidth && mouseX<leftRowX+colourChoicesWidth+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = black;
+  }
+  //gray 
+  if (mouseX>leftRowX+colourChoicesWidth*2 && mouseX<leftRowX+colourChoicesWidth*2+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = gray;
+  }
+  //red 
+  if (mouseX>leftRowX+colourChoicesWidth*3 && mouseX<leftRowX+colourChoicesWidth*3+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = red;
+  }
+  //orange 
+  if (mouseX>leftRowX+colourChoicesWidth*4 && mouseX<leftRowX+colourChoicesWidth*4+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = orange;
+  }
+  //yellow 
+  if (mouseX>leftRowX+colourChoicesWidth*5 && mouseX<leftRowX+colourChoicesWidth*5+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5 && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight) {
+    ink = yellow;
+  }
+  //
+  //lime
+  if (mouseX>leftRowX && mouseX<leftRowX+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = lime;
+  }
+  //green
+  if (mouseX>leftRowX+colourChoicesWidth && mouseX<leftRowX+colourChoicesWidth+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = green;
+  }
+  //teal
+  if (mouseX>leftRowX+colourChoicesWidth*2 && mouseX<leftRowX+colourChoicesWidth*2+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = teal;
+  }
+  //blue2
+  if (mouseX>leftRowX+colourChoicesWidth*3 && mouseX<leftRowX+colourChoicesWidth*3+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = blue2;
+  }
+  //purple
+  if (mouseX>leftRowX+colourChoicesWidth*4 && mouseX<leftRowX+colourChoicesWidth*4+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = purple;
+  }
+  //pink
+  if (mouseX>leftRowX+colourChoicesWidth*5 && mouseX<leftRowX+colourChoicesWidth*5+colourChoicesWidth && mouseY>inkColoursY+leftRowHeight*2/5+colourChoicesHeight && mouseY<inkColoursY+leftRowHeight*2/5+colourChoicesHeight+colourChoicesHeight) {
+    ink = pink;
+  }
+}

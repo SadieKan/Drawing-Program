@@ -67,3 +67,9 @@ void brushSizesText() {
   textFont(buttonFont, 20);
   text(brushSizes, leftRowX+leftRowWidth/15, brushSizesY, leftRowWidth, leftRowHeight*2/5);
 }
+
+void inkColourText() {
+  textAlign (LEFT, CENTER);
+  textFont(buttonFont, 20);
+  text(inkColour, leftRowX+leftRowWidth/15, inkColoursY, leftRowWidth, leftRowHeight*2/5);
+}

@@ -1,14 +1,14 @@
-//For now: if the canvas background colour is white, the ink is black + if it is black, he ink will be white //Hopefully change it so that if the ink and background colour are the same, the ink will change to either black or white 
-
+//Reminder: work on the enlarged hoverover effect for some of the left side options (mainly ink colour since the options may be hard to press)
 
 // Global Variables
 color ink, black = #000000, white = #FFFFFF;
 color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGray;
+color gray, red, blue2, purple, pink, orange, green, teal, lime, yellow;
 PFont buttonFont;
 float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, canvasColourDropdownX, canvasColourDropdownY, canvasColourDropdownWidth, canvasColourDropdownHeight;
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
-float leftRowX, leftRowWidth, leftRowHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, leftRowChoicesWidth, leftRowChoicesHeight;
+float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
@@ -28,7 +28,7 @@ void draw() {
   circles();
   squares();
   triangles();
-  canvasColour();
+  canvasColour(); //if the ink is the same as the canvas colour you are changing it to, the ink will change to black (unless the background colour is being changed to black, then the ink will change to be white)
   boxes(); //prevents the drawing from getting out of the canvas, even when the mouse is moving quickly //canvas tab
 
   //Top Row Buttons
@@ -65,4 +65,5 @@ void mousePressed() {
   squarePressed();
   trianglePressed();
   brushSizesPressed();
+  inkColourPressed();
 }

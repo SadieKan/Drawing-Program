@@ -1,5 +1,5 @@
 //Global Variables
-String shapes = "Shapes:", eraserSizes = "Eraser Sizes:", brushSizes = "Brush Sizes:", inkColour = "Ink Colour:";
+String shapes = "Shapes:", eraserSizes = "Eraser Sizes:", brushSizes = "Brush Sizes:", inkColour = "Ink Colours:";
 
 //Eraser Sizes //Is no longer a dropdown menu because the canvas can't be placed in void draw
 void eraserSizes() {
@@ -218,4 +218,44 @@ void inkColours() {
   fill(darkBlue);
   rect(leftRowX, inkColoursY, leftRowWidth, leftRowHeight*2/5);
   reset();
+  inkColourText();
+  //Top Row
+  rect(leftRowX, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  fill(black);
+  rect(leftRowX+colourChoicesWidth, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(gray);
+  rect(leftRowX+colourChoicesWidth*2, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(red);
+  rect(leftRowX+colourChoicesWidth*3, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(orange);
+  rect(leftRowX+colourChoicesWidth*4, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(yellow);
+  rect(leftRowX+colourChoicesWidth*5, inkColoursY+leftRowHeight*2/5, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  //Bottom Row
+  fill(lime);
+  rect(leftRowX, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(green);
+  rect(leftRowX+colourChoicesWidth, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(teal);
+  rect(leftRowX+colourChoicesWidth*2, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(blue2);
+  rect(leftRowX+colourChoicesWidth*3, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(purple);
+  rect(leftRowX+colourChoicesWidth*4, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  fill(pink);
+  rect(leftRowX+colourChoicesWidth*5, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
+  reset();
+  //(the colour rectangles are drawn on top of the original rectangle, covering the blue border)
+  //Border //Found in Canvas Tab
+  inkColourBorder();
 }//End of Ink Colours

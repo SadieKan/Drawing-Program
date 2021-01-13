@@ -1,11 +1,24 @@
 void variablePopulation() {
   ink = black;
-  backgroundColour = #A8D0E6;
   canvasColour = white;
+  
+  //Colours
+  backgroundColour = #A8D0E6;
   salmon = #F76C6C;
   darkBlue = #24305E;
   blue = #6392bf;
   lightGray = #a5a5a5;
+  //Colour Palette Colours
+  gray = #838383;
+  red = #c44645;
+  blue2 = #6986d5;
+  purple = #ba8fd0;
+  pink = #dc99ad;
+  orange = #e79775;
+  green = #418b52;
+  teal = #8bd4c0;
+  lime = #b4f5a1;
+  yellow = #fff99f;
   
   //Tool Sizes
   penThickness = 2;
@@ -59,18 +72,20 @@ void variablePopulation() {
   canvasColourDropdownX4 = canvasColourDropdownX+canvasColourDropdownWidth*3/4;
   canvasColourDropdownY2 = canvasColourDropdownY+canvasColourDropdownHeight*1/3;
   canvasColourDropdownY3 = canvasColourDropdownY+canvasColourDropdownHeight*2/3;
-  //Icons/Display Choices
 
   //Left Side Buttons
   leftRowX = width*1/30;
   leftRowWidth = width*6/30;
   leftRowHeight = height*4/30;
-  eraserSizesY = height*5/30;
   leftRowChoicesWidth = leftRowWidth/5;
   leftRowChoicesHeight = leftRowHeight-leftRowHeight*2/5;
+  //
+  eraserSizesY = height*5/30;
   shapesY = height*11/30;
   brushSizesY = height*17/30;
   inkColoursY = height*23/30;
+  colourChoicesWidth = leftRowWidth/6;
+  colourChoicesHeight = leftRowChoicesHeight/2;
   //Enlarged Hover Over
   //Icons/Display Choices
 

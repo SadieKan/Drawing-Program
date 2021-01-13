@@ -44,41 +44,51 @@ void canvasColourPressed() {
     dropdown1 = true;
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasWhite = true;
-    ink = black;
+    if (ink == white) ink=black;
     println("Canvas is now white");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasBlack = true;
-    ink = white;
+    if (ink == black) ink=white;
     println("Canvas is now black"); //this was used for troubleshooting
   } else if (dropdown1 == true && mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasGray = true;
+    if (ink == gray) ink=black;
     println("Canvas is now gray");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY && mouseY<canvasColourDropdownY+canvasColourDropdownHeight/3) {
     canvasRed = true;
+    if (ink == red) ink=black;
     println("Canvas is now red");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
     canvasBlue = true;
+    if (ink == blue2) ink=black;
     println("Canvas is now blue");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
     canvasPurple = true;
+    if (ink == purple) ink=black;
     println("Canvas is now purple");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX3 && mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
     canvasPink = true;
+    if (ink == pink) ink=black;
     println("Canvas is now pink");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY2 && mouseY<canvasColourDropdownY2+canvasColourDropdownHeight/3) {
     canvasOrange = true;
+    if (ink == orange) ink=black;
     println("Canvas is now orange");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX && mouseX<canvasColourDropdownX+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
     canvasGreen = true;
+    if (ink == green) ink=black;
     println("Canvas is now green");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX2 && mouseX<canvasColourDropdownX2+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
     canvasTeal = true;
+    if (ink == teal) ink=black;
     println("Canvas is now teal");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX3 && mouseX<canvasColourDropdownX3+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
     canvasLime = true;
+    if (ink == lime) ink=black;
     println("Canvas is now lime");
   } else if (dropdown1 == true && mouseX>canvasColourDropdownX4 && mouseX<canvasColourDropdownX4+canvasColourDropdownWidth/4  && mouseY>canvasColourDropdownY3 && mouseY<canvasColourDropdownY3+canvasColourDropdownHeight/3) {
     canvasYellow = true;
+    if (ink == yellow) ink=black;
     println("Canvas is now yellow");
   } else {
     dropdown1 = false;
@@ -93,6 +103,7 @@ void mainControlsPressed() {
     exit();
   }
   if (mouseX>restartX && mouseX<restartX+topRowWidth  && mouseY>topRowY && mouseY<topRowY+topRowHeight) {
+    canvasColour = white;
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     drawOn = false;
     draw = false;
@@ -108,5 +119,6 @@ void mainControlsPressed() {
     triangle = false;
     penThickness = 2;
     eraserThickness = 20;
+    ink = black;
   }
 }

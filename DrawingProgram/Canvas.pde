@@ -76,3 +76,12 @@ void boxes() {
   line(canvasX+canvasWidth, canvasY, canvasX+canvasWidth, canvasY+canvasHeight);
   reset();
 }
+
+void inkColourBorder() {
+  //rect(leftRowX, inkColoursY, leftRowWidth, leftRowHeight);
+  border();
+  line(leftRowX, inkColoursY, leftRowX, inkColoursY+leftRowHeight);
+  line(leftRowX, inkColoursY+leftRowHeight, leftRowX+leftRowWidth, inkColoursY+leftRowHeight);
+  line(leftRowX+leftRowWidth, inkColoursY, leftRowX+leftRowWidth, inkColoursY+leftRowHeight);
+  reset();
+}

@@ -39,37 +39,36 @@ void canvasColourDropdown() { //will not have hoverover cause it would take too 
     fill(black);
     rect(canvasColourDropdownX2, canvasColourDropdownY, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#838383);
+    fill(gray);
     rect(canvasColourDropdownX3, canvasColourDropdownY, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#c44645);
+    fill(red);
     rect(canvasColourDropdownX4, canvasColourDropdownY, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
     //Colour Palette Row 2
-    fill(#6986d5);
+    fill(blue2);
     rect(canvasColourDropdownX, canvasColourDropdownY2, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#ba8fd0);
+    fill(purple);
     rect(canvasColourDropdownX2, canvasColourDropdownY2, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#dc99ad);
+    fill(pink);
     rect(canvasColourDropdownX3, canvasColourDropdownY2, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#e79775);
+    fill(orange);
     rect(canvasColourDropdownX4, canvasColourDropdownY2, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
     //Colour Palette Row 3
-    fill(#418b52);
+    fill(green);
     rect(canvasColourDropdownX, canvasColourDropdownY3, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#8bd4c0);
+    fill(teal);
     rect(canvasColourDropdownX2, canvasColourDropdownY3, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    fill(#b4f5a1);
+    fill(lime);
     rect(canvasColourDropdownX3, canvasColourDropdownY3, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
-    //Yellow
-    fill(#fff99f);
+    fill(yellow);
     rect(canvasColourDropdownX4, canvasColourDropdownY3, canvasColourDropdownWidth/4, canvasColourDropdownHeight/3);
     reset();
   }
@@ -93,7 +92,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasGray == true) {
-    canvasColour = #838383;
+    canvasColour = gray;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -101,7 +100,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasRed == true) {
-    canvasColour = #c44645;
+    canvasColour = red;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -109,7 +108,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasBlue == true) {
-    canvasColour = #6986d5;
+    canvasColour = blue2;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -117,7 +116,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasPurple == true) {
-    canvasColour = #ba8fd0;
+    canvasColour = purple;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -125,7 +124,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasPink == true) {
-    canvasColour = #dc99ad;
+    canvasColour = pink;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -133,7 +132,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasOrange == true) {
-    canvasColour = #e79775;
+    canvasColour = orange;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -141,7 +140,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasGreen == true) {
-    canvasColour = #418b52;
+    canvasColour = green;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -149,7 +148,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasTeal == true) {
-    canvasColour = #8bd4c0;
+    canvasColour = teal;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -157,7 +156,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasLime == true) {
-    canvasColour = #b4f5a1;
+    canvasColour = lime;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
@@ -165,7 +164,7 @@ void canvasColour() {
     dropdown1 = false;
   }
   if (canvasYellow == true) {
-    canvasColour = #fff99f;
+    canvasColour = yellow;
     fill(canvasColour);
     rect(canvasX, canvasY, canvasWidth, canvasHeight);
     reset();
