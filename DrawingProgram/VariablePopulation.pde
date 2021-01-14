@@ -1,7 +1,8 @@
 void variablePopulation() {
   ink = black;
   canvasColour = white;
-  
+
+
   //Colours
   backgroundColour = #A8D0E6;
   salmon = #F76C6C;
@@ -19,10 +20,12 @@ void variablePopulation() {
   teal = #8bd4c0;
   lime = #b4f5a1;
   yellow = #fff99f;
-  
+
+
   //Tool Sizes
   penThickness = 2;
   eraserThickness = 25;
+
 
   //Canvas
   canvasX = width*9/30;
@@ -30,11 +33,13 @@ void variablePopulation() {
   canvasWidth = width*20/30;
   canvasHeight = height*11/15;
 
+
   //Quit Button
   quitButtonX = width*57/60;
   quitButtonY = height*1/45;
   quitButtonWidth = width*1/30;
   quitButtonHeight = height*1/20;
+
 
   //Line Art
   pic = loadImage ("../Images/totoro.PNG"); //Dimensions: 660 Width, 962 Height
@@ -51,6 +56,7 @@ void variablePopulation() {
   imageY2 = canvasY+ height*1/50;
   imageWidth2 = (canvasHeight*imageWidthRatio2)*15/20;
   imageHeight2 = (canvasHeight*imageHeightRatio2)*15/20; 
+
 
   //Top Row Buttons
   topRowY = height*1/30;
@@ -73,6 +79,7 @@ void variablePopulation() {
   canvasColourDropdownY2 = canvasColourDropdownY+canvasColourDropdownHeight*1/3;
   canvasColourDropdownY3 = canvasColourDropdownY+canvasColourDropdownHeight*2/3;
 
+
   //Left Side Buttons
   leftRowX = width*1/30;
   leftRowWidth = width*6/30;
@@ -87,13 +94,21 @@ void variablePopulation() {
   colourChoicesWidth = leftRowWidth/6;
   colourChoicesHeight = leftRowChoicesHeight/2;
   //Enlarged Hover Over
-  //Icons/Display Choices
 
+
+  //Music Controls
+  musicControlsY = height*27/30;
+  musicControlsHeight = height*2/30;
   //Volume Controls
-
-  //Play and Pause Buttons
-
+  //Play and Pause Button
+  playPauseX = width*44/90;
+  playPauseWidth = width*4/90;
   //Song 1-3 Buttons
-
-  //Music Restart Buttons
+  songWidth = width*9/90;
+  song1X = width*50/90;
+  song2X = width*61/90;
+  song3X = width*72/90;
+  //Music Restart Button
+  restartMusicX = width*83/90;
+  restartMusicWidth = playPauseWidth;
 }

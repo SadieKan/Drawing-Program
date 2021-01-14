@@ -50,6 +50,8 @@ void canvasColourText() {
   text(canvasColourText, backgroundColourX, topRowY, topRowWidth, topRowHeight);
 }
 
+
+//Left Row Buttons
 void eraserSizesText() {
   textAlign (LEFT, CENTER);
   textFont(buttonFont, 20);
@@ -73,3 +75,24 @@ void inkColourText() {
   textFont(buttonFont, 20);
   text(inkColour, leftRowX+leftRowWidth/15, inkColoursY, leftRowWidth, leftRowHeight*2/5);
 }
+
+
+//Music Controls
+/*
+void song1Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 15);
+  text();
+}
+void song2Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 20);
+  text();
+}
+
+void song3Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 20);
+  text();
+}
+*/

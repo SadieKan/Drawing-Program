@@ -1,6 +1,19 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 //Reminder: work on the enlarged hoverover effect for some of the left side options (mainly ink colour since the options may be hard to press)
 
 // Global Variables
+Minim minim;
+int numberOfSongs = 4;
+AudioPlayer[] song = new AudioPlayer[numberOfSongs];
+AudioMetaData[] songMetaData = new AudioMetaData[numberOfSongs];
+int currentSong = numberOfSongs - numberOfSongs;
+//
 color ink, black = #000000, white = #FFFFFF;
 color backgroundColour, canvasColour, salmon, darkBlue, blue, lightGray;
 color gray, red, blue2, purple, pink, orange, green, teal, lime, yellow;
@@ -9,6 +22,7 @@ float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, qui
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
 float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
+float musicControlsY, musicControlsHeight, playPauseX, playPauseWidth, song1X, song2X, song3X, restartMusicX, restartMusicWidth, songWidth;
 float penThickness, eraserThickness;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
 PImage pic, pic2;
@@ -17,6 +31,7 @@ Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false,
 
 void setup() {
   fullScreen(); //landscape
+  minimSetup();
   variablePopulation();
   textSetup();
   canvas();
@@ -45,9 +60,16 @@ void draw() {
   brushSizes();
   inkColours();
 
+  //Music Controls
+  playPauseButton();
+  songOptions();
+  restartMusic();
+
   //Drop Down Menus and Enlarged Options //Placed at the end so that when open, the covers the other buttons/background
   toolsDropdown();
   canvasColourDropdown();
+
+  //
 
   //Sound Control Buttons
 }
