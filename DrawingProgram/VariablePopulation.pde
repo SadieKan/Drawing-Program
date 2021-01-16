@@ -1,7 +1,7 @@
 void variablePopulation() {
   ink = black;
   canvasColour = white;
-
+  angle = 0;
 
   //Colours
   backgroundColour = #A8D0E6;
@@ -101,13 +101,13 @@ void variablePopulation() {
   musicControlsHeight = height*2/30;
   //Volume Controls
   //Play and Pause Button
-  playPauseX = width*44/90;
+  playPauseX = width*38/90;
   playPauseWidth = width*4/90;
   //Song 1-3 Buttons
-  songWidth = width*9/90;
-  song1X = width*50/90;
-  song2X = width*61/90;
-  song3X = width*72/90;
+  songWidth = width*11/90;
+  song1X = width*44/90;
+  song2X = width*57/90;
+  song3X = width*70/90;
   //Music Restart Button
   restartMusicX = width*83/90;
   restartMusicWidth = playPauseWidth;

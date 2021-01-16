@@ -38,10 +38,15 @@ void drawingToolsText() {
   textFont(buttonFont, 20);
   text(drawingToolsText, drawingToolsX, topRowY, topRowWidth, topRowHeight);
 }
-void dropdown2Text() {
+void penText() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
   text(penText, drawingToolsX, topRowY+topRowHeight, topRowWidth, topRowHeight);
+}
+void sprayPaintText() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont, 20);
+  text(sprayPaintText, drawingToolsX, topRowY+topRowHeight*2, topRowWidth, topRowHeight);
 }
 
 void canvasColourText() {
@@ -78,21 +83,18 @@ void inkColourText() {
 
 
 //Music Controls
-/*
 void song1Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 15);
-  text();
+  text(song1Text, song1X, musicControlsY, songWidth, musicControlsHeight);
 }
 void song2Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
-  text();
+  text(song2Text, song2X, musicControlsY, songWidth, musicControlsHeight);
 }
-
 void song3Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont, 20);
-  text();
+  text(song3Text, song3X, musicControlsY, songWidth, musicControlsHeight);
 }
-*/

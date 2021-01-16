@@ -25,6 +25,13 @@ void canvasPressed() {
         draw = false;
       }
     }
+    if (sprayPaintOn == true) {
+      if (sprayPaint == false) {
+        sprayPaint = true;
+      } else {
+        sprayPaint = false;
+      }
+    }
     if (eraserOn == true) {
       if (eraser == false) {
         eraser = true;

@@ -9,9 +9,10 @@ import ddf.minim.ugens.*;
 
 // Global Variables
 Minim minim;
-int numberOfSongs = 4;
+int numberOfSongs = 3;
 AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 AudioMetaData[] songMetaData = new AudioMetaData[numberOfSongs];
+AudioPlayer click;
 int currentSong = numberOfSongs - numberOfSongs;
 //
 color ink, black = #000000, white = #FFFFFF;
@@ -23,11 +24,13 @@ float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserB
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
 float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
 float musicControlsY, musicControlsHeight, playPauseX, playPauseWidth, song1X, song2X, song3X, restartMusicX, restartMusicWidth, songWidth;
-float penThickness, eraserThickness;
+float penThickness, eraserThickness, angle;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
+float song1name, song2name, song3name;
 PImage pic, pic2;
-Boolean draw=false, drawOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
+Boolean draw=false, drawOn=false, sprayPaint=false, sprayPaintOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
 Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
+Boolean song1On=false, song2On=false, song3On=false;
 
 void setup() {
   fullScreen(); //landscape
@@ -39,6 +42,7 @@ void setup() {
 
 void draw() {
   pen();
+  sprayPaint();
   eraser();
   circles();
   squares();
@@ -68,10 +72,6 @@ void draw() {
   //Drop Down Menus and Enlarged Options //Placed at the end so that when open, the covers the other buttons/background
   toolsDropdown();
   canvasColourDropdown();
-
-  //
-
-  //Sound Control Buttons
 }
 
 void mousePressed() {
@@ -88,4 +88,8 @@ void mousePressed() {
   trianglePressed();
   brushSizesPressed();
   inkColourPressed();
+  //Music
+  playPausePressed();
+  songsPressed();
+  rewindMusicPressed();
 }
