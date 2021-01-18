@@ -25,9 +25,9 @@ float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, ca
 float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
 float musicControlsY, musicControlsHeight, playPauseX, playPauseWidth, song1X, song2X, song3X, restartMusicX, restartMusicWidth, songWidth;
 float penThickness, eraserThickness, angle;
-float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2;
+float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2, imageWidth3, imageHeight3;
 float song1name, song2name, song3name;
-PImage pic, pic2;
+PImage pic, pic2, pauseIcon, pauseIcon2, playIcon, playIcon2;
 Boolean draw=false, drawOn=false, sprayPaint=false, sprayPaintOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
 Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
 Boolean song1On=false, song2On=false, song3On=false;

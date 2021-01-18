@@ -11,11 +11,37 @@ void minimSetup() {
 }
 
 void playPauseButton() {
-  border();
-  fill(salmon);
-  rect(playPauseX, musicControlsY, playPauseWidth, musicControlsHeight);
-  reset();
+  if (mouseX>playPauseX && mouseX<playPauseX+playPauseWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
+    if (song[0].isPlaying() | song[1].isPlaying() | song[2].isPlaying()) {
+      border();
+      fill(darkBlue);
+      rect(playPauseX, musicControlsY, playPauseWidth, musicControlsHeight);
+      reset();
+      image(pauseIcon2, playPauseX+playPauseWidth*1/9, musicControlsY+musicControlsHeight*1/16, imageWidth3*1/12, imageHeight3*1/12);
+    } else {
+      border();
+      fill(darkBlue);
+      rect(playPauseX, musicControlsY, playPauseWidth, musicControlsHeight);
+      reset();
+      image(playIcon2, playPauseX+playPauseWidth*1/7, musicControlsY+musicControlsHeight*1/16, imageWidth3*1/12, imageHeight3*1/12);
+    }
+  } else {
+    if (song[0].isPlaying() | song[1].isPlaying() | song[2].isPlaying()) {
+      border();
+      fill(salmon);
+      rect(playPauseX, musicControlsY, playPauseWidth, musicControlsHeight);
+      reset();
+      image(pauseIcon, playPauseX+playPauseWidth*1/9, musicControlsY+musicControlsHeight*1/16, imageWidth3*1/12, imageHeight3*1/12);
+    } else {
+      border();
+      fill(salmon);
+      rect(playPauseX, musicControlsY, playPauseWidth, musicControlsHeight);
+      reset();
+      image(playIcon, playPauseX+playPauseWidth*1/7, musicControlsY+musicControlsHeight*1/16, imageWidth3*1/12, imageHeight3*1/12);
+    }
+  }
 }
+
 
 void songOptions() {
   border();
