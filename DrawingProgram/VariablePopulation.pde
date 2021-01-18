@@ -109,6 +109,8 @@ void variablePopulation() {
   pauseIcon2 = loadImage ("../Images/pause2.png"); //Dimensions: 300 Width, 300 Height
   playIcon = loadImage ("../Images/play1.png"); //Dimensions: 300 Width, 300 Height
   playIcon2 = loadImage ("../Images/play2.png"); //Dimensions: 300 Width, 300 Height
+  rewindIcon = loadImage ("../Images/rewind1.png"); //Dimensions: 300 Width, 300 Height
+  rewindIcon2 = loadImage ("../Images/rewind2.png"); //Dimensions: 300 Width, 300 Height
   float imageWidthRatio3 = 300.0/300.0; 
   float imageHeightRatio3 = 300.0/300.0;
   imageWidth3 = canvasHeight*imageWidthRatio3;

@@ -58,8 +58,17 @@ void songOptions() {
 }
 
 void restartMusic() {
-  border();
-  fill(salmon);
-  rect(restartMusicX, musicControlsY, restartMusicWidth, musicControlsHeight);
-  reset();
+  if (mouseX>restartMusicX && mouseX<restartMusicX+restartMusicWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
+    border();
+    fill(darkBlue);
+    rect(restartMusicX, musicControlsY, restartMusicWidth, musicControlsHeight);
+    reset();
+    image(rewindIcon2, restartMusicX+playPauseWidth*1/14, musicControlsY+musicControlsHeight*1/27, imageWidth3*1/11, imageHeight3*1/11);
+  } else {
+    border();
+    fill(salmon);
+    rect(restartMusicX, musicControlsY, restartMusicWidth, musicControlsHeight);
+    reset();
+    image(rewindIcon, restartMusicX+playPauseWidth*1/14, musicControlsY+musicControlsHeight*1/27, imageWidth3*1/11, imageHeight3*1/11);
+  }
 }
