@@ -49,7 +49,7 @@ void sprayPaint() {
   if (sprayPaint == true) {
     angle += 5;
     float val = cos(radians(angle)) * 12.0;
-    for (int a = 0; a < 360; a += 50) {
+    for (int a = 0; a < 360; a += 30) {
       float xoff = cos(radians(a)) * val;
       float yoff = sin(radians(a)) * val;
       stroke(ink);
@@ -59,7 +59,7 @@ void sprayPaint() {
     }
     stroke(ink);
     fill(ink);
-    ellipse(mouseX, mouseY, 3, 3);
+    ellipse(mouseX, mouseY, val, val);
     reset();
   }
 }

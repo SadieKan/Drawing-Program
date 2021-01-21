@@ -255,7 +255,5 @@ void inkColours() {
   fill(pink);
   rect(leftRowX+colourChoicesWidth*5, inkColoursY+leftRowHeight*2/5+colourChoicesHeight, colourChoicesWidth, colourChoicesHeight);
   reset();
-  //(the colour rectangles are drawn on top of the original rectangle, covering the blue border)
-  //Border //Found in Canvas Tab
   inkColourBorder();
 }//End of Ink Colours

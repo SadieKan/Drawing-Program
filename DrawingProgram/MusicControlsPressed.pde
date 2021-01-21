@@ -8,20 +8,21 @@ void playPausePressed() {
       } else {
         song[0].play();
       }
-    }
-    if (song2On == true) {
+    } else if (song2On == true) {
       if (song[1].isPlaying()) {
         song[1].pause();
       } else {
         song[1].play();
       }
-    }
-    if (song3On == true) {
+    } else if (song3On == true) {
       if (song[2].isPlaying()) {
         song[2].pause();
       } else {
         song[2].play();
       }
+    } else {
+      song1On = true;
+      song[0].play();
     }
   }
 }

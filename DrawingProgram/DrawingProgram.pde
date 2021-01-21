@@ -5,8 +5,6 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-//Reminder: work on the enlarged hoverover effect for some of the left side options (mainly ink colour since the options may be hard to press)
-
 // Global Variables
 Minim minim;
 int numberOfSongs = 3;
