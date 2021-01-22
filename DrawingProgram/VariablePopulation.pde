@@ -100,29 +100,32 @@ void variablePopulation() {
   musicControlsY = height*27/30;
   musicControlsHeight = height*2/30;
   //
-  //Volume Controls
+  //Images Below all have the Dimensions: 300 Width, 300 Height;
+  playlistIcon = loadImage ("../Images/playlist1.png"); 
+  playlistIcon2 = loadImage ("../Images/playlist2.png"); 
+  loopIcon = loadImage ("../Images/loop1.png"); 
+  loopIcon2 = loadImage ("../Images/loop2.png"); 
+  pauseIcon = loadImage ("../Images/pause1.png"); 
+  pauseIcon2 = loadImage ("../Images/pause2.png"); 
+  playIcon = loadImage ("../Images/play1.png"); 
+  playIcon2 = loadImage ("../Images/play2.png"); 
+  rewindIcon = loadImage ("../Images/rewind1.png"); 
+  rewindIcon2 = loadImage ("../Images/rewind2.png"); 
   //
-  //Play and Pause Button
-  playPauseX = width*38/90;
-  playPauseWidth = width*4/90;
-  pauseIcon = loadImage ("../Images/pause1.png"); //Dimensions: 300 Width, 300 Height
-  pauseIcon2 = loadImage ("../Images/pause2.png"); //Dimensions: 300 Width, 300 Height
-  playIcon = loadImage ("../Images/play1.png"); //Dimensions: 300 Width, 300 Height
-  playIcon2 = loadImage ("../Images/play2.png"); //Dimensions: 300 Width, 300 Height
-  rewindIcon = loadImage ("../Images/rewind1.png"); //Dimensions: 300 Width, 300 Height
-  rewindIcon2 = loadImage ("../Images/rewind2.png"); //Dimensions: 300 Width, 300 Height
+  musicButtonWidth = width*4/90;
   float imageWidthRatio3 = 300.0/300.0; 
   float imageHeightRatio3 = 300.0/300.0;
   imageWidth3 = canvasHeight*imageWidthRatio3;
   imageHeight3 = canvasHeight*imageHeightRatio3;
+  //
+  playlistX = width*26/90;
+  loopX = width*32/90;
+  playPauseX = width*38/90;
+  restartMusicX = width*83/90;
   //
   //Song 1-3 Buttons
   songWidth = width*11/90;
   song1X = width*44/90;
   song2X = width*57/90;
   song3X = width*70/90;
-  //
-  //Music Restart Button
-  restartMusicX = width*83/90;
-  restartMusicWidth = playPauseWidth;
 }

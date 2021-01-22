@@ -21,14 +21,14 @@ float canvasX, canvasY, canvasWidth, canvasHeight, quitButtonX, quitButtonY, qui
 float topRowY, topRowWidth, topRowHeight, restartX, lineArtX, lineArt2X, eraserButtonX, drawingToolsX, backgroundColourX;
 float canvasColourDropdownX2, canvasColourDropdownX3, canvasColourDropdownX4, canvasColourDropdownX5, canvasColourDropdownY2, canvasColourDropdownY3;
 float leftRowX, leftRowWidth, leftRowHeight, leftRowChoicesWidth, leftRowChoicesHeight, eraserSizesY, shapesY, brushSizesY, inkColoursY, colourChoicesWidth, colourChoicesHeight;
-float musicControlsY, musicControlsHeight, playPauseX, playPauseWidth, song1X, song2X, song3X, restartMusicX, restartMusicWidth, songWidth;
+float musicControlsY, musicControlsHeight, musicButtonWidth, playlistX, loopX, playPauseX, restartMusicX, song1X, song2X, song3X, songWidth;
 float penThickness, eraserThickness, angle;
 float imageX, imageY, imageWidth, imageHeight, imageX2, imageY2, imageWidth2, imageHeight2, imageWidth3, imageHeight3;
 float song1name, song2name, song3name;
-PImage pic, pic2, pauseIcon, pauseIcon2, playIcon, playIcon2, rewindIcon, rewindIcon2;
+PImage pic, pic2, playlistIcon, playlistIcon2, loopIcon, loopIcon2, pauseIcon, pauseIcon2, playIcon, playIcon2, rewindIcon, rewindIcon2;
 Boolean draw=false, drawOn=false, sprayPaint=false, sprayPaintOn=false, lineArt1= false, lineArt2= false, eraser=false, eraserOn=false, dropdown2=false, dropdown1=false, circleOn=false, circle=false, squareOn=false, square=false, triangleOn=false, triangle=false; 
 Boolean canvasBlack=false, canvasWhite=false, canvasGray=false, canvasRed=false, canvasBlue=false, canvasPurple=false, canvasPink=false, canvasOrange=false, canvasGreen=false, canvasTeal=false, canvasLime=false, canvasYellow=false; //Canvas Background Colour 
-Boolean song1On=false, song2On=false, song3On=false;
+Boolean song1On=false, song2On=false, song3On=false, playlistOn=false, loopOn=false;
 
 void setup() {
   fullScreen(); //landscape
@@ -63,6 +63,9 @@ void draw() {
   inkColours();
 
   //Music Controls
+  playlistLoop();
+  playlistButton();
+  loopButton();
   playPauseButton();
   songOptions();
   restartMusic();
@@ -87,7 +90,15 @@ void mousePressed() {
   brushSizesPressed();
   inkColourPressed();
   //Music
+  playlistPressed();
+  loopPressed();
+  playlistLoop();
   playPausePressed();
   songsPressed();
   rewindMusicPressed();
+}
+
+void keyPressed() {
+  if ( key == 'f' || key == 'F') song[currentSong].skip(10000); //10 seconds
+  if ( key == 'b' || key == 'B') song[currentSong].skip(-10000); //10 secondsbb
 }

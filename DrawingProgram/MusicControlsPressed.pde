@@ -1,5 +1,35 @@
+void playlistPressed() {
+  if (mouseX>playlistX && mouseX<playlistX+musicButtonWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
+    click.play();
+    click.rewind();
+    if (playlistOn == true) {
+      playlistOn = false;
+    } else if (playlistOn == false && loopOn == true) {
+      playlistOn = true;
+      loopOn = false;
+    } else {
+      playlistOn = true;
+    }
+  }
+}
+
+void loopPressed() {
+  if (mouseX>loopX && mouseX<loopX+musicButtonWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
+    click.play();
+    click.rewind();
+    if (loopOn == true) {
+      loopOn = false;
+    } else if (loopOn == false && playlistOn == true) {
+      playlistOn = false;
+      loopOn = true;
+    } else {
+      loopOn = true;
+    }
+  }
+}
+
 void playPausePressed() { 
-  if (mouseX>playPauseX && mouseX<playPauseX+playPauseWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
+  if (mouseX>playPauseX && mouseX<playPauseX+musicButtonWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) {
     click.play();
     click.rewind();
     if (song1On == true) {
@@ -79,7 +109,7 @@ void songsPressed() {
 }
 
 void rewindMusicPressed() {
-  if (mouseX>restartMusicX && mouseX<restartMusicX+restartMusicWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) { 
+  if (mouseX>restartMusicX && mouseX<restartMusicX+musicButtonWidth && mouseY>musicControlsY && mouseY<musicControlsY+musicControlsHeight) { 
     click.play();
     click.rewind();
     if (song1On == true) {
