@@ -1,5 +1,5 @@
 void textSetup() {
-  buttonFont = createFont ("ArialRoundedMTBold", 20);
+  buttonFont = createFont ("BanglaSangamMN", 20);
 }
 
 
